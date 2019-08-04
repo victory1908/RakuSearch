@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13EEBF09008351D5405EA2A0 /* Pods_jichiba_homeassignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3B6F00D838511A6096AEF3 /* Pods_jichiba_homeassignmentUITests.framework */; };
+		5214EDA7A256A1E1FB6FF88C /* Pods_jichiba_homeassignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED102D4C7187B1FE9F30E17 /* Pods_jichiba_homeassignmentTests.framework */; };
+		605270F80ECF6FC1376336EC /* Pods_jichiba_homeassignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385FEFF612DCA61A7BBDD620 /* Pods_jichiba_homeassignment.framework */; };
+		A0C0715122ED4B2C00E77D12 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0715022ED4B2C00E77D12 /* ItemCell.swift */; };
+		A0C071D522ED55B600E77D12 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C071D422ED55B600E77D12 /* SearchVM.swift */; };
+		A0C071D722EDCB8F00E77D12 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C071D622EDCB8F00E77D12 /* SearchVC.swift */; };
+		C41B0E1F2240C28B00EC7E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B0E1E2240C28B00EC7E9E /* AppDelegate.swift */; };
+		C41B0E242240C28B00EC7E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41B0E222240C28B00EC7E9E /* Main.storyboard */; };
+		C41B0E262240C28D00EC7E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C41B0E252240C28D00EC7E9E /* Assets.xcassets */; };
+		C41B0E292240C28D00EC7E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41B0E272240C28D00EC7E9E /* LaunchScreen.storyboard */; };
+		C41B0E342240C28D00EC7E9E /* jichiba_homeassignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B0E332240C28D00EC7E9E /* jichiba_homeassignmentTests.swift */; };
+		C41B0E3F2240C28D00EC7E9E /* jichiba_homeassignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B0E3E2240C28D00EC7E9E /* jichiba_homeassignmentUITests.swift */; };
+		C41B0E4E2240C30E00EC7E9E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B0E4D2240C30E00EC7E9E /* Item.swift */; };
+		C41B0E562240C64400EC7E9E /* QuickNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B0E552240C64400EC7E9E /* QuickNetworking.swift */; };
+		C41B0E5A2240C8D400EC7E9E /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B0E592240C8D400EC7E9E /* SearchRequest.swift */; };
+		C41B0E5C2240C94E00EC7E9E /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B0E5B2240C94E00EC7E9E /* APIRequest.swift */; };
+		C41B0E5E2240CBE200EC7E9E /* RakutenAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B0E5D2240CBE200EC7E9E /* RakutenAPIRequest.swift */; };
+		C41B0E612240CF3A00EC7E9E /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B0E602240CF3A00EC7E9E /* SearchResponse.swift */; };
+		C41B0E632240CF4700EC7E9E /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B0E622240CF4700EC7E9E /* APIResponse.swift */; };
+		C41B0E6A2240DDCC00EC7E9E /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C41B0E692240DDCC00EC7E9E /* readme.md */; };
+		C41B0E6E2241F86000EC7E9E /* jichiba-home-assignment-sample-initialscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C41B0E6C2241F86000EC7E9E /* jichiba-home-assignment-sample-initialscreen.png */; };
+		C41B0E712241F89C00EC7E9E /* jichiba-home-assignment-sample-searchresultscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C41B0E702241F89C00EC7E9E /* jichiba-home-assignment-sample-searchresultscreen.png */; };
+		C41B0E752241F98E00EC7E9E /* search-icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C41B0E732241F98E00EC7E9E /* search-icon.pdf */; };
+		C41B0E762241F98E00EC7E9E /* shop-icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C41B0E742241F98E00EC7E9E /* shop-icon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C41B0E302240C28D00EC7E9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C41B0E132240C28B00EC7E9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C41B0E1A2240C28B00EC7E9E;
+			remoteInfo = "jichiba-homeassignment";
+		};
+		C41B0E3B2240C28D00EC7E9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C41B0E132240C28B00EC7E9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C41B0E1A2240C28B00EC7E9E;
+			remoteInfo = "jichiba-homeassignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		385FEFF612DCA61A7BBDD620 /* Pods_jichiba_homeassignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jichiba_homeassignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		444B2E607725EED47A58C5CD /* Pods-jichiba-homeassignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jichiba-homeassignmentTests.release.xcconfig"; path = "Target Support Files/Pods-jichiba-homeassignmentTests/Pods-jichiba-homeassignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		4EBCC4A468B19E8C856BFDA6 /* Pods-jichiba-homeassignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jichiba-homeassignment.debug.xcconfig"; path = "Target Support Files/Pods-jichiba-homeassignment/Pods-jichiba-homeassignment.debug.xcconfig"; sourceTree = "<group>"; };
+		6A3B6F00D838511A6096AEF3 /* Pods_jichiba_homeassignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jichiba_homeassignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9603A85C5420B6DEB0B956BF /* Pods-jichiba-homeassignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jichiba-homeassignment.release.xcconfig"; path = "Target Support Files/Pods-jichiba-homeassignment/Pods-jichiba-homeassignment.release.xcconfig"; sourceTree = "<group>"; };
+		A0C0715022ED4B2C00E77D12 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		A0C071D422ED55B600E77D12 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		A0C071D622EDCB8F00E77D12 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		ADC879E76D8412228D9CB65A /* Pods-jichiba-homeassignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jichiba-homeassignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-jichiba-homeassignmentUITests/Pods-jichiba-homeassignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C41B0E1B2240C28B00EC7E9E /* jichiba-homeassignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jichiba-homeassignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C41B0E1E2240C28B00EC7E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C41B0E232240C28B00EC7E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C41B0E252240C28D00EC7E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C41B0E282240C28D00EC7E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C41B0E2A2240C28D00EC7E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C41B0E2F2240C28D00EC7E9E /* jichiba-homeassignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jichiba-homeassignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C41B0E332240C28D00EC7E9E /* jichiba_homeassignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jichiba_homeassignmentTests.swift; sourceTree = "<group>"; };
+		C41B0E352240C28D00EC7E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C41B0E3A2240C28D00EC7E9E /* jichiba-homeassignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jichiba-homeassignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C41B0E3E2240C28D00EC7E9E /* jichiba_homeassignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jichiba_homeassignmentUITests.swift; sourceTree = "<group>"; };
+		C41B0E402240C28D00EC7E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C41B0E4D2240C30E00EC7E9E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C41B0E552240C64400EC7E9E /* QuickNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickNetworking.swift; sourceTree = "<group>"; };
+		C41B0E592240C8D400EC7E9E /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		C41B0E5B2240C94E00EC7E9E /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		C41B0E5D2240CBE200EC7E9E /* RakutenAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakutenAPIRequest.swift; sourceTree = "<group>"; };
+		C41B0E602240CF3A00EC7E9E /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		C41B0E622240CF4700EC7E9E /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		C41B0E692240DDCC00EC7E9E /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		C41B0E6C2241F86000EC7E9E /* jichiba-home-assignment-sample-initialscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jichiba-home-assignment-sample-initialscreen.png"; sourceTree = "<group>"; };
+		C41B0E702241F89C00EC7E9E /* jichiba-home-assignment-sample-searchresultscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jichiba-home-assignment-sample-searchresultscreen.png"; sourceTree = "<group>"; };
+		C41B0E732241F98E00EC7E9E /* search-icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "search-icon.pdf"; sourceTree = "<group>"; };
+		C41B0E742241F98E00EC7E9E /* shop-icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "shop-icon.pdf"; sourceTree = "<group>"; };
+		CDDB1463EAE951550595FD48 /* Pods-jichiba-homeassignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jichiba-homeassignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-jichiba-homeassignmentUITests/Pods-jichiba-homeassignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D697C255D8516E81F64D3D3A /* Pods-jichiba-homeassignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jichiba-homeassignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-jichiba-homeassignmentTests/Pods-jichiba-homeassignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DED102D4C7187B1FE9F30E17 /* Pods_jichiba_homeassignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jichiba_homeassignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C41B0E182240C28B00EC7E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605270F80ECF6FC1376336EC /* Pods_jichiba_homeassignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41B0E2C2240C28D00EC7E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5214EDA7A256A1E1FB6FF88C /* Pods_jichiba_homeassignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41B0E372240C28D00EC7E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13EEBF09008351D5405EA2A0 /* Pods_jichiba_homeassignmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0C0715222ED4C1500E77D12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0C071D622EDCB8F00E77D12 /* SearchVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0C071D122ED553100E77D12 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0C071D422ED55B600E77D12 /* SearchVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB5CE0A972E3C94703C9257A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EBCC4A468B19E8C856BFDA6 /* Pods-jichiba-homeassignment.debug.xcconfig */,
+				9603A85C5420B6DEB0B956BF /* Pods-jichiba-homeassignment.release.xcconfig */,
+				D697C255D8516E81F64D3D3A /* Pods-jichiba-homeassignmentTests.debug.xcconfig */,
+				444B2E607725EED47A58C5CD /* Pods-jichiba-homeassignmentTests.release.xcconfig */,
+				ADC879E76D8412228D9CB65A /* Pods-jichiba-homeassignmentUITests.debug.xcconfig */,
+				CDDB1463EAE951550595FD48 /* Pods-jichiba-homeassignmentUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C41B0E122240C28B00EC7E9E = {
+			isa = PBXGroup;
+			children = (
+				C41B0E6B2241F84F00EC7E9E /* Sample Design */,
+				C41B0E692240DDCC00EC7E9E /* readme.md */,
+				C41B0E1D2240C28B00EC7E9E /* jichiba-homeassignment */,
+				C41B0E322240C28D00EC7E9E /* jichiba-homeassignmentTests */,
+				C41B0E3D2240C28D00EC7E9E /* jichiba-homeassignmentUITests */,
+				C41B0E1C2240C28B00EC7E9E /* Products */,
+				BB5CE0A972E3C94703C9257A /* Pods */,
+				FC93E5D306696275795286B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C41B0E1C2240C28B00EC7E9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E1B2240C28B00EC7E9E /* jichiba-homeassignment.app */,
+				C41B0E2F2240C28D00EC7E9E /* jichiba-homeassignmentTests.xctest */,
+				C41B0E3A2240C28D00EC7E9E /* jichiba-homeassignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C41B0E1D2240C28B00EC7E9E /* jichiba-homeassignment */ = {
+			isa = PBXGroup;
+			children = (
+				A0C071D122ED553100E77D12 /* ViewModel */,
+				A0C0715222ED4C1500E77D12 /* Controller */,
+				C41B0E662240DD4700EC7E9E /* View */,
+				C41B0E642240D59E00EC7E9E /* DataModel */,
+				C41B0E572240C8BF00EC7E9E /* API */,
+				C41B0E4F2240C4B100EC7E9E /* Common */,
+				C41B0E1E2240C28B00EC7E9E /* AppDelegate.swift */,
+				C41B0E222240C28B00EC7E9E /* Main.storyboard */,
+				C41B0E252240C28D00EC7E9E /* Assets.xcassets */,
+				C41B0E272240C28D00EC7E9E /* LaunchScreen.storyboard */,
+				C41B0E2A2240C28D00EC7E9E /* Info.plist */,
+			);
+			path = "jichiba-homeassignment";
+			sourceTree = "<group>";
+		};
+		C41B0E322240C28D00EC7E9E /* jichiba-homeassignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E332240C28D00EC7E9E /* jichiba_homeassignmentTests.swift */,
+				C41B0E352240C28D00EC7E9E /* Info.plist */,
+			);
+			path = "jichiba-homeassignmentTests";
+			sourceTree = "<group>";
+		};
+		C41B0E3D2240C28D00EC7E9E /* jichiba-homeassignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E3E2240C28D00EC7E9E /* jichiba_homeassignmentUITests.swift */,
+				C41B0E402240C28D00EC7E9E /* Info.plist */,
+			);
+			path = "jichiba-homeassignmentUITests";
+			sourceTree = "<group>";
+		};
+		C41B0E4F2240C4B100EC7E9E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E502240C4BC00EC7E9E /* Network */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C41B0E502240C4BC00EC7E9E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E552240C64400EC7E9E /* QuickNetworking.swift */,
+				C41B0E5B2240C94E00EC7E9E /* APIRequest.swift */,
+				C41B0E622240CF4700EC7E9E /* APIResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C41B0E572240C8BF00EC7E9E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E5D2240CBE200EC7E9E /* RakutenAPIRequest.swift */,
+				C41B0E5F2240CF3100EC7E9E /* Response */,
+				C41B0E582240C8C900EC7E9E /* Request */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C41B0E582240C8C900EC7E9E /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E592240C8D400EC7E9E /* SearchRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C41B0E5F2240CF3100EC7E9E /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E602240CF3A00EC7E9E /* SearchResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C41B0E642240D59E00EC7E9E /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E4D2240C30E00EC7E9E /* Item.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		C41B0E662240DD4700EC7E9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0C0715022ED4B2C00E77D12 /* ItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C41B0E6B2241F84F00EC7E9E /* Sample Design */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E722241F92D00EC7E9E /* Resources */,
+				C41B0E702241F89C00EC7E9E /* jichiba-home-assignment-sample-searchresultscreen.png */,
+				C41B0E6C2241F86000EC7E9E /* jichiba-home-assignment-sample-initialscreen.png */,
+			);
+			path = "Sample Design";
+			sourceTree = "<group>";
+		};
+		C41B0E722241F92D00EC7E9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C41B0E732241F98E00EC7E9E /* search-icon.pdf */,
+				C41B0E742241F98E00EC7E9E /* shop-icon.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC93E5D306696275795286B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				385FEFF612DCA61A7BBDD620 /* Pods_jichiba_homeassignment.framework */,
+				DED102D4C7187B1FE9F30E17 /* Pods_jichiba_homeassignmentTests.framework */,
+				6A3B6F00D838511A6096AEF3 /* Pods_jichiba_homeassignmentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C41B0E1A2240C28B00EC7E9E /* jichiba-homeassignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C41B0E432240C28D00EC7E9E /* Build configuration list for PBXNativeTarget "jichiba-homeassignment" */;
+			buildPhases = (
+				B9E5636F081ACB9D2B7999A0 /* [CP] Check Pods Manifest.lock */,
+				C41B0E172240C28B00EC7E9E /* Sources */,
+				C41B0E182240C28B00EC7E9E /* Frameworks */,
+				C41B0E192240C28B00EC7E9E /* Resources */,
+				0759520A96BC2C12BA0FAB37 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "jichiba-homeassignment";
+			productName = "jichiba-homeassignment";
+			productReference = C41B0E1B2240C28B00EC7E9E /* jichiba-homeassignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C41B0E2E2240C28D00EC7E9E /* jichiba-homeassignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C41B0E462240C28D00EC7E9E /* Build configuration list for PBXNativeTarget "jichiba-homeassignmentTests" */;
+			buildPhases = (
+				2E30D25E0BFB211D79E2EFE2 /* [CP] Check Pods Manifest.lock */,
+				C41B0E2B2240C28D00EC7E9E /* Sources */,
+				C41B0E2C2240C28D00EC7E9E /* Frameworks */,
+				C41B0E2D2240C28D00EC7E9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C41B0E312240C28D00EC7E9E /* PBXTargetDependency */,
+			);
+			name = "jichiba-homeassignmentTests";
+			productName = "jichiba-homeassignmentTests";
+			productReference = C41B0E2F2240C28D00EC7E9E /* jichiba-homeassignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C41B0E392240C28D00EC7E9E /* jichiba-homeassignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C41B0E492240C28D00EC7E9E /* Build configuration list for PBXNativeTarget "jichiba-homeassignmentUITests" */;
+			buildPhases = (
+				9B478DD361547C2DE6F10FFA /* [CP] Check Pods Manifest.lock */,
+				C41B0E362240C28D00EC7E9E /* Sources */,
+				C41B0E372240C28D00EC7E9E /* Frameworks */,
+				C41B0E382240C28D00EC7E9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C41B0E3C2240C28D00EC7E9E /* PBXTargetDependency */,
+			);
+			name = "jichiba-homeassignmentUITests";
+			productName = "jichiba-homeassignmentUITests";
+			productReference = C41B0E3A2240C28D00EC7E9E /* jichiba-homeassignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C41B0E132240C28B00EC7E9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kerdkokaew, Peera | Mai | ECMD";
+				TargetAttributes = {
+					C41B0E1A2240C28B00EC7E9E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C41B0E2E2240C28D00EC7E9E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C41B0E1A2240C28B00EC7E9E;
+					};
+					C41B0E392240C28D00EC7E9E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C41B0E1A2240C28B00EC7E9E;
+					};
+				};
+			};
+			buildConfigurationList = C41B0E162240C28B00EC7E9E /* Build configuration list for PBXProject "jichiba-homeassignment" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C41B0E122240C28B00EC7E9E;
+			productRefGroup = C41B0E1C2240C28B00EC7E9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C41B0E1A2240C28B00EC7E9E /* jichiba-homeassignment */,
+				C41B0E2E2240C28D00EC7E9E /* jichiba-homeassignmentTests */,
+				C41B0E392240C28D00EC7E9E /* jichiba-homeassignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C41B0E192240C28B00EC7E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41B0E292240C28D00EC7E9E /* LaunchScreen.storyboard in Resources */,
+				C41B0E262240C28D00EC7E9E /* Assets.xcassets in Resources */,
+				C41B0E752241F98E00EC7E9E /* search-icon.pdf in Resources */,
+				C41B0E6A2240DDCC00EC7E9E /* readme.md in Resources */,
+				C41B0E712241F89C00EC7E9E /* jichiba-home-assignment-sample-searchresultscreen.png in Resources */,
+				C41B0E762241F98E00EC7E9E /* shop-icon.pdf in Resources */,
+				C41B0E242240C28B00EC7E9E /* Main.storyboard in Resources */,
+				C41B0E6E2241F86000EC7E9E /* jichiba-home-assignment-sample-initialscreen.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41B0E2D2240C28D00EC7E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41B0E382240C28D00EC7E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0759520A96BC2C12BA0FAB37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jichiba-homeassignment/Pods-jichiba-homeassignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jichiba-homeassignment/Pods-jichiba-homeassignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jichiba-homeassignment/Pods-jichiba-homeassignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E30D25E0BFB211D79E2EFE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jichiba-homeassignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B478DD361547C2DE6F10FFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jichiba-homeassignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E5636F081ACB9D2B7999A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jichiba-homeassignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C41B0E172240C28B00EC7E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C071D722EDCB8F00E77D12 /* SearchVC.swift in Sources */,
+				C41B0E5E2240CBE200EC7E9E /* RakutenAPIRequest.swift in Sources */,
+				C41B0E4E2240C30E00EC7E9E /* Item.swift in Sources */,
+				C41B0E1F2240C28B00EC7E9E /* AppDelegate.swift in Sources */,
+				A0C0715122ED4B2C00E77D12 /* ItemCell.swift in Sources */,
+				A0C071D522ED55B600E77D12 /* SearchVM.swift in Sources */,
+				C41B0E612240CF3A00EC7E9E /* SearchResponse.swift in Sources */,
+				C41B0E5A2240C8D400EC7E9E /* SearchRequest.swift in Sources */,
+				C41B0E5C2240C94E00EC7E9E /* APIRequest.swift in Sources */,
+				C41B0E562240C64400EC7E9E /* QuickNetworking.swift in Sources */,
+				C41B0E632240CF4700EC7E9E /* APIResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41B0E2B2240C28D00EC7E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41B0E342240C28D00EC7E9E /* jichiba_homeassignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41B0E362240C28D00EC7E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41B0E3F2240C28D00EC7E9E /* jichiba_homeassignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C41B0E312240C28D00EC7E9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C41B0E1A2240C28B00EC7E9E /* jichiba-homeassignment */;
+			targetProxy = C41B0E302240C28D00EC7E9E /* PBXContainerItemProxy */;
+		};
+		C41B0E3C2240C28D00EC7E9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C41B0E1A2240C28B00EC7E9E /* jichiba-homeassignment */;
+			targetProxy = C41B0E3B2240C28D00EC7E9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C41B0E222240C28B00EC7E9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C41B0E232240C28B00EC7E9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C41B0E272240C28D00EC7E9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C41B0E282240C28D00EC7E9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C41B0E412240C28D00EC7E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C41B0E422240C28D00EC7E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C41B0E442240C28D00EC7E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EBCC4A468B19E8C856BFDA6 /* Pods-jichiba-homeassignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87CT3T3CK2;
+				INFOPLIST_FILE = "jichiba-homeassignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rakuten.dev.jichiba-homeassignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C41B0E452240C28D00EC7E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9603A85C5420B6DEB0B956BF /* Pods-jichiba-homeassignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87CT3T3CK2;
+				INFOPLIST_FILE = "jichiba-homeassignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rakuten.dev.jichiba-homeassignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C41B0E472240C28D00EC7E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D697C255D8516E81F64D3D3A /* Pods-jichiba-homeassignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87CT3T3CK2;
+				INFOPLIST_FILE = "jichiba-homeassignmentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rakuten.dev.jichiba-homeassignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jichiba-homeassignment.app/jichiba-homeassignment";
+			};
+			name = Debug;
+		};
+		C41B0E482240C28D00EC7E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 444B2E607725EED47A58C5CD /* Pods-jichiba-homeassignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87CT3T3CK2;
+				INFOPLIST_FILE = "jichiba-homeassignmentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rakuten.dev.jichiba-homeassignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jichiba-homeassignment.app/jichiba-homeassignment";
+			};
+			name = Release;
+		};
+		C41B0E4A2240C28D00EC7E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC879E76D8412228D9CB65A /* Pods-jichiba-homeassignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87CT3T3CK2;
+				INFOPLIST_FILE = "jichiba-homeassignmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rakuten.dev.jichiba-homeassignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "jichiba-homeassignment";
+			};
+			name = Debug;
+		};
+		C41B0E4B2240C28D00EC7E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDDB1463EAE951550595FD48 /* Pods-jichiba-homeassignmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87CT3T3CK2;
+				INFOPLIST_FILE = "jichiba-homeassignmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rakuten.dev.jichiba-homeassignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "jichiba-homeassignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C41B0E162240C28B00EC7E9E /* Build configuration list for PBXProject "jichiba-homeassignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41B0E412240C28D00EC7E9E /* Debug */,
+				C41B0E422240C28D00EC7E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C41B0E432240C28D00EC7E9E /* Build configuration list for PBXNativeTarget "jichiba-homeassignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41B0E442240C28D00EC7E9E /* Debug */,
+				C41B0E452240C28D00EC7E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C41B0E462240C28D00EC7E9E /* Build configuration list for PBXNativeTarget "jichiba-homeassignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41B0E472240C28D00EC7E9E /* Debug */,
+				C41B0E482240C28D00EC7E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C41B0E492240C28D00EC7E9E /* Build configuration list for PBXNativeTarget "jichiba-homeassignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41B0E4A2240C28D00EC7E9E /* Debug */,
+				C41B0E4B2240C28D00EC7E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C41B0E132240C28B00EC7E9E /* Project object */;
+}
